@@ -1,0 +1,342 @@
+/* ==========================================================
+   Mayank Kataria - Portfolio Website
+   Colors: Red and White theme
+   ========================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- Navbar ---------- */
+#navbar {
+  background-color: #ffffff;
+  border-bottom: 2px solid #d32f2f;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #d32f2f;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: #333333;
+}
+
+.nav-links a:hover {
+  color: #d32f2f;
+}
+
+/* ---------- Section common styles ---------- */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ---------- Home ---------- */
+.home {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.greeting {
+  color: #d32f2f;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.home-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.home-text h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #d32f2f;
+  margin-bottom: 20px;
+  min-height: 30px;
+}
+
+.home-desc {
+  max-width: 500px;
+  margin-bottom: 25px;
+  color: #555555;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 2px solid #d32f2f;
+}
+
+.btn-red {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+
+.btn-red:hover {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #d32f2f;
+}
+
+.btn-outline:hover {
+  background-color: #fdecea;
+}
+
+.home-image {
+  flex: 0 0 auto;
+  width: 260px;
+}
+
+.home-image img {
+  width: 100%;
+  border: 4px solid #d32f2f;
+  border-radius: 8px;
+}
+
+/* ---------- Work Experience ---------- */
+.work {
+  background-color: #fdf3f2;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-left: 4px solid #d32f2f;
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #222222;
+}
+
+.card-sub {
+  color: #d32f2f;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.card ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.card li {
+  margin-bottom: 8px;
+  color: #555555;
+}
+
+/* ---------- Projects ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  padding: 25px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #222222;
+}
+
+.project-tags {
+  color: #d32f2f;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.project-card p:last-child {
+  color: #555555;
+  font-size: 14px;
+}
+
+/* ---------- Skills ---------- */
+.skills {
+  background-color: #fdf3f2;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.skill-box h3 {
+  font-size: 18px;
+  color: #d32f2f;
+  margin-bottom: 12px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  background-color: #ffffff;
+  border: 1px solid #d32f2f;
+  color: #333333;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+/* ---------- Contact ---------- */
+.contact {
+  text-align: center;
+}
+
+.contact-desc {
+  color: #555555;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: #d32f2f;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+  color: #777777;
+  font-size: 14px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+
+  .project-grid,
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
